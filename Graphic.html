@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f5f0;
+            color: #333;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .logo-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            height: 70px;
+            background: linear-gradient(90deg, #f4c4df, #e58596);
+            box-shadow: 0 4px 20px rgba(253, 138, 159, 0.508);
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+        .logo h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.8em;
+            color: #fff;
+            z-index: 2;
+            position: relative;
+        }
+
+        nav {
+            text-align: center;
+            margin: 30px 0;
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e58596;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .portfolio-item {
+            flex-basis: calc(45% - 20px);
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .portfolio-item p {
+            font-size: 0.95em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translateY(-50%) scale(1);
+            }
+            50% {
+                transform: translateY(-50%) scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                flex-basis: 100%;
+            }
+        }
+
+        /* Creative Background Accents */
+        .bg-circle {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #ffebf2;
+            filter: blur(60px);
+            z-index: -1;
+        }
+
+        .circle-1 {
+            top: 10%;
+            left: 15%;
+        }
+
+        .circle-2 {
+            bottom: 5%;
+            right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+
+    <div class="container">
+        <div class="logo">
+            <div class="logo-background"></div>
+            <h1>MY WORK</h1>
+        </div>
+
+        <nav>
+            <a href="http://127.0.0.1:5501/index.html">HOME</a>
+            <a href="http://127.0.0.1:5501/graphic.html">POSTERS</a>
+            <a href="http://127.0.0.1:5501/Branding.html">BRANDING</a>
+            <a href="http://127.0.0.1:5501/Contact.html">CONTACT</a>
+        </nav>
+
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="queen.jpg" alt="Project Image">
+                <p>This graphic design showcases the Queen of Hearts playing card in a bold, stylized manner. The red color and intricate details of the queen's attire create a striking visual. The minimalist background highlights the card's design, making it a versatile image for various creative projects.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="tarte.jpg" alt="Project Image">
+                <p>The poster effectively uses a simple yet striking design. The contrasting colors of the lemons and the checkered background create a visually appealing image. The bold typography draws attention to the main message: "LEMON TARTE." The inclusion of fresh lemons and leaves adds a touch of realism and evokes a sense of freshness. Overall, the poster is well-executed and effectively conveys its message.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="invest.jpg" alt="Project Image">
+                <p>This vibrant illustration features the inspiring message "Don't Be Afraid to Invest in Yourself," surrounded by colorful flowers and stars. The bold, playful typography and cheerful color palette create a positive and motivating atmosphere. The design encourages self-care, personal growth, and the pursuit of one's dreams.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="dolce vita.jpg" alt="Project Image">
+                <p>This vibrant poster captures the essence of "La Dolce Vita" with a simple yet striking image. A glass of orange juice and two slices of orange are the focal point, set against a backdrop of bold, colorful stripes. The clean lines and bright colors create a sense of energy and refreshment. The phrase "La Dolce Vita" is elegantly written, inviting viewers to embrace the sweet life. Overall, the poster is a visually appealing and inspiring reminder to savor life's simple pleasures.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="pasta.jpg" alt="Project Image">
+                <p>This playful illustration celebrates the love of pasta. A towering pile of spaghetti, adorned with cherry tomatoes, is depicted on a checkered tablecloth. A fork dangles nearby, ready to take a bite. The simple, hand-drawn style adds a touch of whimsy and nostalgia. The phrase "Pasta Lover" is written in a casual, handwritten font, further emphasizing the carefree and joyful nature of the image. Overall, this artwork captures the pure joy of indulging in a delicious plate of pasta.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="ice cream.jpg" alt="Project Image">
+                <p>This vibrant poster celebrates summer and ice cream. The title "Summer Scoops" and the image of colorful ice cream cones create a playful and inviting atmosphere. The tagline "Cool Off With A Twist" promises unique and exciting flavors. The bullet points highlight the exploration of different ice cream flavors, from classic to innovative. Overall, the poster effectively captures the joy and indulgence of summer ice cream.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="more.jpg" alt="Project Image">
+                <p>This image promotes a new sans-serif font called "More Cocktails Please," designed by Silverstag Type Foundry. The font's bold, rounded letters and vibrant colors capture the Y2K aesthetic. The image showcases the font's versatility, using it to create a playful and eye-catching design that evokes the spirit of the early 2000s.<p>
+            </div>
+            <div class="portfolio-item">
+                <img src="puma.jpg" alt="Project Image">
+                <p>This image is a vibrant and playful design featuring a pair of Puma Suede Classic sneakers. The shoes are positioned in a creative way, with one leg raised and the shoe pointing upwards. The design incorporates bold, colorful typography that surrounds the shoes, creating a dynamic and eye-catching composition. The overall style is reminiscent of 70s and 80s aesthetics, with its bold colors and retro font.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="Do It For Yourself.jpg" alt="Project Image">
+                <p>This graphic design features the motivational message "Do It For Yourself" presented in a playful and visually appealing way. The phrase is broken up into individual letters, with colorful stickers and text overlays adding a sense of dynamism and personality. The overall design is bold and eye-catching, encouraging the viewer to prioritize their own desires and aspirations</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="pink .jpg" alt="Project Image">
+                <p>This graphic design uses a bold and energetic style to promote a skydiving contest. The large, pixelated text "FEEL THE FEAR AND DO IT ANYWAY" is the centerpiece, conveying a message of courage and adventure. The image of a skydiver against a pink starburst background adds a dynamic and exciting element. The simple, black and pink color scheme creates a striking contrast, making the poster visually impactful. Overall, the design effectively captures the thrill and excitement of skydiving.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="love.jpg" alt="Project Image">
+                <p>This graphic design playfully depicts the word "love" using 3D, bubble-like letters in a vibrant pink color. The letters are arranged in a dynamic composition, creating a visually striking and cheerful image. The contrasting black background and typography further emphasize the playful nature of the design.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="wallows.jpg" alt="Project Image">
+                <p>This image appears to be a promotional poster for an album or music project titled "Yelostu." The poster features a pair of Puma Suede Classic sneakers in a vibrant color scheme. The text on the poster includes the album title, track names, and the artist's name. The overall design is bold and colorful, with a retro vibe that evokes the 70s and 80s.</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

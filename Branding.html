@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f5f0;
+            color: #333;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .logo-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            height: 70px;
+            background: linear-gradient(90deg, #f4c4df, #e58596);
+            box-shadow: 0 4px 20px rgba(255, 117, 143, 0.4);
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+        .logo h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.8em;
+            color: #fff;
+            z-index: 2;
+            position: relative;
+        }
+
+        nav {
+            text-align: center;
+            margin: 30px 0;
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff758f;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .portfolio-item {
+            flex-basis: calc(45% - 20px);
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .portfolio-item p {
+            font-size: 0.95em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .arrow {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2.5em;
+            color: #ff758f;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translateY(-50%) scale(1);
+            }
+            50% {
+                transform: translateY(-50%) scale(1.1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                flex-basis: 100%;
+            }
+        }
+
+        /* Creative Background Accents */
+        .bg-circle {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #ffebf2;
+            filter: blur(60px);
+            z-index: -1;
+        }
+
+        .circle-1 {
+            top: 10%;
+            left: 15%;
+        }
+
+        .circle-2 {
+            bottom: 5%;
+            right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+
+    <div class="container">
+        <div class="logo">
+            <div class="logo-background"></div>
+            <h1>MY WORK</h1>
+        </div>
+
+        <nav>
+            <a href="http://127.0.0.1:5501/index.html">HOME</a>
+            <a href="http://127.0.0.1:5501/graphic.html">POSTERS</a>
+            <a href="http://127.0.0.1:5501/Branding.html">BRANDING</a>
+            <a href="http://127.0.0.1:5501/Contact.html">CONTACT</a>
+        </nav>
+
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="01.jpg" alt="Project Image">
+                <p>Awesome Woman is a brand that celebrates the power and beauty of women. Their products, showcased in these vibrant and playful packaging designs, likely cater to a range of needs and preferences. The bold colors and abstract patterns reflect a modern and empowering aesthetic. Awesome Woman aims to inspire and uplift women through their products and branding.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="02.jpg" alt="Project Image">
+                <p>Du Savo is a brand that specializes in mango-based products. The packaging design features a vintage-inspired illustration of a mango, suggesting a focus on natural and traditional flavors. The use of a bright yellow color scheme further emphasizes the tropical nature of the product.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="03.jpg" alt="Project Image">
+                <p>Curame is a hair care brand that offers natural and effective products. The packaging design is bold and eye-catching, with a vibrant green and pink color scheme. The product shown is the Kaida Kick Ginger & Keratin treatment, which likely promotes hair growth and strength.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="04.jpg" alt="Project Image">
+                <p>This image features a product called "Sweedies Mood Rings," which are likely cannabis-infused gummies. The packaging is colorful and playful, with a rainbow design and the word "MOOD" prominently displayed. The image shows two hands, one holding a single gummy and the other holding a larger bag of the product. The background is a bright blue sky with white clouds, creating a cheerful and inviting atmosphere.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="10.jpg" alt="Project Image">
+                <p>This image showcases the packaging design for a brand of Ceylon black tea. The packaging features a minimalist design with a focus on a single, intricate line art illustration of a flower. The color scheme is predominantly blue, creating a sense of calmness and sophistication. The product name, "Ceylon," is prominently displayed in a clean, modern typeface. The image also includes a cup of tea and tea bags, further emphasizing the product's purpose.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="06.jpg" alt="Project Image">
+                <p>This image features a red shopping bag with the word "CIERRE" printed in white bold letters. The bag has white handles and casts a shadow on a white surface. The overall design is simple and elegant, with a focus on the brand name. The red color is eye-catching and associated with excitement and energy, making it suitable for a retail brand.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="07.jpg" alt="Project Image">
+                <p>By Vilaine is a skincare brand that specializes in products infused with lavender. The packaging design is elegant and minimalist, with a focus on soft purple hues that complement the natural beauty of lavender. The products shown likely include a cleanser, moisturizer, serum, and eye cream, suggesting a comprehensive skincare routine.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="05.jpg" alt="Project Image">
+                <p>Wasted Wine Club is a fun and irreverent wine club that brings unique and delicious wines to your doorstep. Their quirky packaging and humorous branding reflect their lighthearted approach to wine. The club curates a selection of wines from around the world, focusing on small-batch producers and interesting varietals. Whether you're a seasoned wine connoisseur or just starting your wine journey, Wasted Wine Club offers a delightful way to discover new wines and share them with friends.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="09.jpg" alt="Project Image">
+                <p>This image showcases a product called "Shimmering Lip Gloss" from the brand "Gloss Boss." The product is packaged in a sleek, pink tube with a matching cardboard box. The packaging features playful lip prints and the brand name in bold, stylish typography. The product is positioned as a high-coverage, long-lasting gloss that enhances lips with a shimmery finish. The image emphasizes the product's vibrant color and its ability to create a glamorous look.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="11.jpg" alt="Project Image">
+                <p>This image features a VERB caffeinated energy bar in a cookie butter flavor. The bar is placed on top of a stack of cookies, with cookie butter oozing down the sides. The overall image suggests a delicious and indulgent treat, while the text on the bar highlights its caffeinated and energy-boosting properties</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="08.jpg" alt="Project Image">
+                <p>This image features a scented candle from the brand North Muse. The candle comes in a pink and red cylindrical container with a glass lid. The packaging features a playful design with various symbols like crystals, stars, and suns. The scent of the candle is described as "Mystic Rose," suggesting a floral and dreamy fragrance. The brand name and product details are prominently displayed on the packaging. Overall, the design conveys a sense of whimsy and magic, appealing to those who enjoy unique and aesthetically pleasing products.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="12.jpg" alt="Project Image">
+                <p>This image shows a deck of playing cards in a decorative box. The box is a deep red color with a playful pattern of monsters and other whimsical creatures. The deck of cards is visible inside the box, with a Joker card partially shown. The overall design is whimsical and fun, suggesting a unique and creative take on a classic game.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="13.jpg" alt="Project Image">
+                <p>Punchy is a refreshing, lightly sparkling beverage with Vitamin D. It comes in three vibrant flavors: Blood Orange with Bitters & Cardamom, Cucumber with Yuzu & Rosemary, and Peach with Ginger & Chai. Each flavor is a unique blend of natural ingredients, creating a delicious and healthy drink option. Punchy is more than just a drink; it's a lifestyle. It's for those who want to live life to the fullest, without compromising on taste or health. Punchy is bold, refreshing, and packed with flavor. It's the perfect drink for any occasion, whether you're relaxing at home or out with friends.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="14.jpg" alt="Project Image">
+                <p>Sucré is a brand that specializes in creating delectable macarons. Known for their delicate and flavorful treats, Sucré uses high-quality ingredients to craft each macaron. The brand's packaging, as seen in the image, is elegant and minimalist, emphasizing the beauty of the product itself. Sucré's macarons are not just a dessert; they are a delightful experience that combines taste, texture, and visual appeal.</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
